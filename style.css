@@ -1,0 +1,70 @@
+body {
+    background-color: aliceblue;
+    color: #61876E;
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    color: #61876E;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: bold;  */
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid  #61876E;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.intro {
+    display: grid;
+    grid-template-rows: 190px 250px;
+    grid-template-columns: 250px 450px;
+    position: absolute;
+    margin: auto;
+    top: 150px;
+    left: 150px;
+    /* width: 50%; */
+}
+h1 {
+    font-size: 100px;
+}
+.hello{
+    margin: 50px 0 0 0;
+    /* border: 1px solid black;  */
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    padding: 5px 0 5px 0px;
+}
+.catherine {
+    margin: 0;
+    /* border: 1px solid black; */
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    padding: 0px 0 5px 0px;
+}
+
+.aboutMe {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    align-self: flex-end;
+    position: absolute;
+    right: 0px;
+}
+.portfolio {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    position: absolute;
+    right: 0px;
+}
+.contact {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    align-self: flex-end;
+    
+}
+
+.contact:hover, .portfolio:hover, .aboutMe:hover {
+    font-size: 30px;
+    font-weight: bold;
+}
