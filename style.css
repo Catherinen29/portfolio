@@ -1,30 +1,51 @@
-body {
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
     background-color: aliceblue;
-    color: #61876E;
+    /* color: #61876E; */
+    /* color: #1B1B1B; */
+    color:#242124;
     font-family: 'Raleway', sans-serif;
     min-height: 100vh;
+    display: grid;
+    flex-direction: column;
 }
 
 header {
     color: #61876E;
     font-family: 'Raleway', sans-serif;
-    /* font-weight: bold;  */
+    height: 20px;
     margin: 0;
-    padding: 5px 10px;
+    padding: 5px 20px;
     border: 1px solid  #61876E;
     border-radius: 5px;
     text-align: right;
 }
+header img {
+    height: 100%;
+}
+
+.container1 {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
 
 .intro {
+    /* border: 1px solid black;  */
     display: grid;
-    grid-template-rows: 190px 250px;
-    grid-template-columns: 250px 450px;
-    position: absolute;
-    margin: auto;
-    top: 150px;
-    left: 150px;
-    /* width: 50%; */
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    margin: 12rem auto;
+    width: 50rem;
+    height: 30rem;
+    top: 25%;
+    left: 25%;
 }
 h1 {
     font-size: 100px;
@@ -32,39 +53,121 @@ h1 {
 .hello{
     margin: 50px 0 0 0;
     /* border: 1px solid black;  */
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
     padding: 5px 0 5px 0px;
 }
 .catherine {
     margin: 0;
     /* border: 1px solid black; */
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
+    grid-row: 3 / span 3;
+    grid-column: 3 / span 3;
     padding: 0px 0 5px 0px;
 }
 
-.aboutMe {
+.aboutMe-link {
+    grid-row: 5 / span 1;
+    grid-column: 5 / span 1;
+    align-self: flex-end;
+    text-align: right;
+    text-decoration: none;
+    color:#242124;
+    /* border: 1px solid black; */
+}
+.portfolio-link {
     grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
+    grid-column: 5 / span 1;
     align-self: flex-end;
-    position: absolute;
-    right: 0px;
+    text-align: right;
+    text-decoration: none;
+    color:#242124;
+    width: 12rem;
+    /* border: 1px solid black; */
 }
-.portfolio {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-    position: absolute;
-    right: 0px;
-}
-.contact {
-    grid-row: 1 / span 1;
+.contact-link {
+    grid-row: 3 / span 1;
     grid-column: 1 / span 1;
-    align-self: flex-end;
-    
+    width: 8rem;
+    align-self: flex-start;
+    text-decoration: none;
+    color:#242124;
 }
 
-.contact:hover, .portfolio:hover, .aboutMe:hover {
-    font-size: 30px;
-    font-weight: bold;
+.hello:hover, .catherine:hover {
+    color: #61876E;
+}
+
+.contact-link:hover, .portfolio-link:hover, .aboutMe-link:hover {
+    font-size: 130%;
+    font-weight: bold;    
+    color: #61876E;
+
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem;
+}
+.aboutMe-p {
+    width: 60rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem auto 15rem auto;
+}
+
+.p4-content {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.p-container, .p3, .p2, .p1 {
+    margin: 3rem;
+}
+.project-desc {
+    width: 30rem;
+}
+
+.tictactoe-img, .recipe-img {
+    width: 23rem;
+    height: 22rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+}
+
+.eventMate-img, .bookclub-img {
+    width: 30rem;
+    height: 22rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20rem;
+}
+
+.contactBtns {
+    display: flex;
+    flex-direction: row;
+}
+
+.linkBtns {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 2rem;
+}
+
+.footer {
+    margin: 5rem;
 }
