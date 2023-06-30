@@ -14,12 +14,12 @@ html {
 }
 
 header {
-    color: #61876E;
+    color:#242124;
     font-family: 'Raleway', sans-serif;
     height: 20px;
     margin: 0;
     padding: 5px 20px;
-    border: 1px solid  #61876E;
+    border: 1px solid  #242124;
     border-radius: 5px;
     text-align: right;
 }
@@ -110,6 +110,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 12rem;
+    padding: 10rem auto;
 }
 .aboutMe-p {
     width: 60rem;
@@ -123,30 +124,51 @@ h1 {
     margin: 12rem auto 15rem auto;
 }
 
-.p4-content {
+.p4-content, .p3-content, .p2-content, .p1-content {
     display: grid;
     grid-template-columns: 2;
+    grid-template-rows: 2;
 }
-
+.p4-stack{
+    list-style-type: none;  
+    line-height: 2rem;
+}
 .p-container, .p3, .p2, .p1 {
     margin: 3rem;
 }
-.project-desc {
+.p4-desc, .p2-desc, .p3-desc, .p1-desc {
     width: 30rem;
+    grid-column: 2 / span 1;
+    margin: 1rem;
 }
+.bookclub-img, .recipe-img {
+    grid-column: 1 / span 1;
+}
+.p3-desc, .p1-desc {
+    width: 30rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;;
+    margin: 1rem;
+}
+.eventMate-img, .tictactoe-img {
+    grid-column: 2 / span 1;
+
+}
+
 
 .tictactoe-img, .recipe-img {
     width: 23rem;
     height: 22rem;
     border-radius: 1rem;
     border: 0.1rem solid black;
+    margin: 1rem;
 }
-
 .eventMate-img, .bookclub-img {
     width: 30rem;
     height: 22rem;
     border-radius: 1rem;
     border: 0.1rem solid black;
+    margin: 1rem;
 }
 
 .contact {
