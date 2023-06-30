@@ -125,6 +125,7 @@ h1 {
 
 }
 
+/* ABOUT ME SECTION */
 .aboutMe {
     display: flex;
     flex-direction: column;
@@ -137,6 +138,7 @@ h1 {
     width: 60rem;
 }
 
+/* PORTFOLIO SECTION */
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -152,9 +154,12 @@ h1 {
 }
 .p4-stack, .p3-stack, .p2-stack, .p1-stack{
     list-style-type: none;  
-    line-height: 2rem;
+    line-height: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem
 }
-.p-container, .p3, .p2, .p1 {
+.p-container {
     margin: 3rem;
 }
 .p4-desc, .p2-desc, .p3-desc, .p1-desc {
@@ -171,7 +176,7 @@ h1 {
     grid-row: 1 / span 1;;
     margin: 1rem;
 }
-.eventMate-img, .tictactoe-img {
+.eventMate-link, .tictactoe-link {
     grid-column: 2 / span 1;
 
 }
@@ -192,6 +197,7 @@ h1 {
     margin: 1rem;
 }
 
+/* CONTACT SECTION */
 .contact {
     display: flex;
     flex-direction: column;
