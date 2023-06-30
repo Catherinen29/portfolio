@@ -46,10 +46,36 @@ header img {
     height: 30rem;
     top: 25%;
     left: 25%;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1)
+}
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
 }
 h1 {
     font-size: 100px;
+    opacity: 0;
+    filter: blur(1rem);
+    animation: fade-in 1s 0.4s 
+        forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
+.aboutMe-link, .portfolio-link, .contact-link {
+    opacity: 0;
+    filter: blur(1rem);
+    animation: fade-in 1.5s 0.4s 
+        forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0)
+    }
+}
+
 .hello{
     margin: 50px 0 0 0;
     /* border: 1px solid black;  */
@@ -93,14 +119,9 @@ h1 {
     color:#242124;
 }
 
-.hello:hover, .catherine:hover {
-    color: #61876E;
-}
-
 .contact-link:hover, .portfolio-link:hover, .aboutMe-link:hover {
     font-size: 130%;
     font-weight: bold;    
-    color: #61876E;
 
 }
 
@@ -129,7 +150,7 @@ h1 {
     grid-template-columns: 2;
     grid-template-rows: 2;
 }
-.p4-stack{
+.p4-stack, .p3-stack, .p2-stack, .p1-stack{
     list-style-type: none;  
     line-height: 2rem;
 }
