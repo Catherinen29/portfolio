@@ -200,7 +200,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20rem;
+    margin: 5rem auto;
 }
 
 .contactBtns {
@@ -220,8 +220,6 @@ h1 {
 
 
 /* RESPONSIVE */
-
-
 
 @media screen and (max-width: 900px) {
     body {
@@ -311,9 +309,16 @@ h1 {
         padding: 3rem;
         width: 15rem;
     }
+    .contact {
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 700px) {
+    .container1, .container2 {
+        width: 25rem;
+    }
+
     .intro {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -350,5 +355,18 @@ h1 {
     .contact-link {
         grid-row: 5 / span 1;
         grid-column: 1 / span 1;
+    }
+    .aboutMe {
+        width: 20rem;
+        margin: auto;
+    }
+    .portfolio {
+        width: 20rem;
+        justify-content: center;
+        align-items: center;
+        margin: 12rem auto 15rem auto;
+    }
+    .contact {
+        margin: auto;
     }
 }
