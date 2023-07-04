@@ -3,10 +3,12 @@ html {
   }
 
   body {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    /* background-color: #9B9B9B; */
     /* color: #61876E; */
     /* color: #1B1B1B; */
-    color:#242124;
+    color: #434343;
+    background-color: #FDB76D;
     font-family: 'Raleway', sans-serif;
     min-height: 100vh;
     display: grid;
@@ -17,7 +19,7 @@ header {
     color:#242124;
     font-family: 'Raleway', sans-serif;
     height: 20px;
-    margin: 0;
+    margin: 0 1rem;
     padding: 5px 20px;
     border: 1px solid  #242124;
     border-radius: 5px;
@@ -44,8 +46,6 @@ header img {
     margin: 12rem auto;
     width: 50rem;
     height: 30rem;
-    top: 25%;
-    left: 25%;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1)
 }
@@ -107,7 +107,7 @@ h1 {
     text-align: right;
     text-decoration: none;
     color:#242124;
-    width: 12rem;
+    /* width: 12rem; */
     /* border: 1px solid black; */
 }
 .contact-link {
@@ -134,9 +134,6 @@ h1 {
     margin: 12rem;
     padding: 10rem auto;
 }
-.aboutMe-p {
-    width: 60rem;
-}
 
 /* PORTFOLIO SECTION */
 .portfolio {
@@ -162,7 +159,7 @@ h1 {
 .p-container {
     margin: 3rem;
 }
-.p4-desc, .p2-desc, .p3-desc, .p1-desc {
+.p4-desc, .p2-desc {
     width: 30rem;
     grid-column: 2 / span 1;
     margin: 1rem;
@@ -173,7 +170,7 @@ h1 {
 .p3-desc, .p1-desc {
     width: 30rem;
     grid-column: 1 / span 1;
-    grid-row: 1 / span 1;;
+    grid-row: 1 / span 1;
     margin: 1rem;
 }
 .eventMate-link, .tictactoe-link {
@@ -219,4 +216,89 @@ h1 {
 
 .footer {
     margin: 5rem;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+    body {
+      padding: 0;
+    }
+    .container2 {
+        width: 35rem;
+    }
+
+    .intro {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem auto;
+        width: 25rem;
+        height: 20rem;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    .hello{
+        margin: 3rem 0 0 0;
+        /* border: 1px solid black;  */
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 3;
+        padding: 5px 0 5px 0px;
+    }
+    .catherine {
+        margin: 0;
+        grid-row: 3 / span 3;
+        grid-column: 2 / span 1;
+        padding: 0px 0 5px 0px;
+    }
+    .aboutMe-link {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        align-self: flex-start;
+        text-align: left;
+        /* border: 1px solid black; */
+    }
+    .portfolio-link {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+        align-self: flex-start;
+        text-align: left;
+    }
+    .contact-link {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    .aboutMe {
+        width: 30rem;
+        margin: auto;
+    }
+
+    .p4-content, .p3-content, .p2-content, .p1-content {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+    }
+    .p4-desc, .p2-desc, .p3-desc, .p1-desc {
+        grid-column: 1;
+        grid-row: 2 / span 1;
+        width: 20rem;
+    }
+    .eventMate-link, .tictactoe-link {
+        grid-column: 1;
+        grid-row: 1 / span 1;
+    }
+    .tictactoe-img, .recipe-img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .eventMate-img, .bookclub-img {
+        width: 20rem;
+        height: 15rem;
+    }
+    .p4-stack, .p3-stack, .p2-stack, .p1-stack{
+        padding: 3rem;
+        width: 15rem;
+    }
 }
