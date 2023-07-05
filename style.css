@@ -8,7 +8,7 @@ html {
     /* color: #61876E; */
     /* color: #1B1B1B; */
     color: #434343;
-    background-color: #FDB76D;
+    background-color: #242124;
     font-family: 'Raleway', sans-serif;
     min-height: 100vh;
     display: grid;
@@ -16,12 +16,12 @@ html {
 }
 
 header {
-    color:#242124;
+    color:aliceblue;
     font-family: 'Raleway', sans-serif;
     height: 20px;
     margin: 0 1rem;
     padding: 5px 20px;
-    border: 1px solid  #242124;
+    border: 1px solid aliceblue;
     border-radius: 5px;
     text-align: right;
 }
@@ -31,6 +31,7 @@ header img {
 
 .container1 {
     display: flex;
+    background-color: #242124;
 }
 
 .container2 {
@@ -40,6 +41,7 @@ header img {
 
 .intro {
     /* border: 1px solid black;  */
+    color: aliceblue;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
@@ -97,7 +99,7 @@ h1 {
     align-self: flex-end;
     text-align: right;
     text-decoration: none;
-    color:#242124;
+    color: aliceblue;
     /* border: 1px solid black; */
 }
 .portfolio-link {
@@ -106,7 +108,7 @@ h1 {
     align-self: flex-end;
     text-align: right;
     text-decoration: none;
-    color:#242124;
+    color:aliceblue;
     /* width: 12rem; */
     /* border: 1px solid black; */
 }
@@ -116,7 +118,7 @@ h1 {
     width: 8rem;
     align-self: flex-start;
     text-decoration: none;
-    color:#242124;
+    color:aliceblue;
 }
 
 .contact-link:hover, .portfolio-link:hover, .aboutMe-link:hover {
@@ -131,8 +133,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12rem;
-    padding: 10rem auto;
+    margin: 12rem 0;
+    padding: 12rem auto;
+    height: 45rem;
+    background-color: aliceblue;
 }
 
 /* PORTFOLIO SECTION */
@@ -142,6 +146,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 12rem auto 15rem auto;
+    color: aliceblue;
 }
 
 .p4-content, .p3-content, .p2-content, .p1-content {
@@ -173,34 +178,33 @@ h1 {
     grid-row: 1 / span 1;
     margin: 1rem;
 }
-.eventMate-link, .tictactoe-link {
-    grid-column: 2 / span 1;
-
-}
-
 
 .tictactoe-img, .recipe-img {
     width: 23rem;
     height: 22rem;
     border-radius: 1rem;
-    border: 0.1rem solid black;
+    border: 0.1rem solid aliceblue;
     margin: 1rem;
 }
 .eventMate-img, .bookclub-img {
     width: 30rem;
     height: 22rem;
     border-radius: 1rem;
-    border: 0.1rem solid black;
+    border: 0.1rem solid aliceblue;
     margin: 1rem;
 }
-
+.eventMate-img, .tictactoe-img {
+    grid-column: 2 / span 1;
+}
 /* CONTACT SECTION */
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem auto;
+    height: 30rem;
+    margin: 5rem 0;
+    background-color: aliceblue;
 }
 
 .contactBtns {
@@ -221,7 +225,7 @@ h1 {
 }
 
 .footer {
-    margin: 5rem;
+    margin: 1rem;
 }
 
 
@@ -299,10 +303,6 @@ h1 {
         grid-row: 2 / span 1;
         width: 20rem;
     }
-    .eventMate-link, .tictactoe-link {
-        grid-column: 1;
-        grid-row: 1 / span 1;
-    }
     .tictactoe-img, .recipe-img {
         width: 20rem;
         height: 20rem;
@@ -310,6 +310,10 @@ h1 {
     .eventMate-img, .bookclub-img {
         width: 20rem;
         height: 15rem;
+    }
+    .eventMate-img, .tictactoe-link  {
+        grid-column: 1;
+        grid-row: 1 / span 1;
     }
     .p4-stack, .p3-stack, .p2-stack, .p1-stack{
         padding: 3rem;
