@@ -3,7 +3,6 @@ html {
   }
 
   body {
-    /* background-color: aliceblue; */
     /* background-color: #9B9B9B; */
     /* color: #61876E; */
     /* color: #1B1B1B; */
@@ -35,10 +34,6 @@ header img {
     background-color: #242124;
 }
 
-.container2 {
-    display: flex;
-    flex-direction: column;
-}
 
 .intro {
     /* border: 1px solid black;  */
@@ -46,11 +41,14 @@ header img {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    margin: 12rem auto;
+    margin: 5rem auto;
     width: 50rem;
     height: 30rem;
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1)
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    padding: 10rem 15rem;
+    border: 3rem solid aliceblue;
+    border-radius: 6rem;
 }
 @keyframes scale {
     100% {
@@ -129,19 +127,27 @@ h1 {
 }
 
 /* ABOUT ME SECTION */
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
 .aboutMe {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7rem 0;
+    margin: 4rem 3rem;
     padding: 10rem auto;
-    height: 40rem;
-    background-color: aliceblue;
+    min-height: 40rem;
+    border: 3rem solid #242124;
+    border-radius: 6rem;
 }
 
 .aboutMe-p {
-    margin: 2rem 15rem;
+    margin: 2rem 4rem;
 }
 
 /* PORTFOLIO SECTION */
@@ -150,8 +156,11 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem auto 5rem auto;
+    margin: 4rem 3rem;
     color: aliceblue;
+    border: 3rem solid aliceblue;
+    border-radius: 6rem;
+    padding: 5rem;
 }
 
 .p4-content, .p3-content, .p2-content, .p1-content {
@@ -201,6 +210,31 @@ h1 {
 .eventMate-img, .tictactoe-img {
     grid-column: 2 / span 1;
 }
+
+/* SKILLS SECTION */
+.container4 {
+    background-color: aliceblue;
+}
+.skills-container {
+    margin: 4rem 3rem;
+    padding: 5rem;
+    background-color: aliceblue;
+    border: 3rem solid #242124;
+    border-radius: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.skills-list {
+    list-style-type: none; 
+}
+
 /* CONTACT SECTION */
 .contact {
     display: flex;
@@ -208,8 +242,11 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 30rem;
-    margin: 5rem 0;
-    background-color: aliceblue;
+    margin: 4rem 3rem;
+    background-color: #242124;
+    color: aliceblue;
+    border: 3rem solid aliceblue;
+    border-radius: 6rem;
 }
 
 .contactBtns {
@@ -241,10 +278,6 @@ h1 {
       padding: 0;
       justify-content: center;
       align-items: center;
-
-    }
-    .container1, .container2 {
-        width: 35rem;
     }
 
     h1 {
@@ -256,7 +289,11 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         margin: 3rem auto;
         width: 30rem;
-        height: 20rem;
+        height: 30rem;
+        padding: 5rem 3rem;
+        justify-content: center;
+        align-items: center;
+        border: 2rem solid aliceblue;
     }
     .hello{
         margin: 3rem 0 0 0;
@@ -276,7 +313,7 @@ h1 {
         grid-column: 1 / span 1;
         align-self: flex-start;
         text-align: left;
-        padding: 1rem 0;
+        padding: 2rem 0;
         /* border: 1px solid black; */
     }
     .portfolio-link {
@@ -289,14 +326,31 @@ h1 {
         grid-row: 4 / span 1;
         grid-column: 3 / span 1;
     }
-    .aboutMe {
-        width: 30rem;
-        margin: auto;
+
+    /* ABOUT ME SECTION */
+    .container2 {
+        display: flex;
     }
+    .aboutMe {
+        display: flex;
+        width: 30rem;
+        min-height: 40rem;
+        margin: 3rem auto;
+        padding: 2rem 0;
+        margin: 3rem auto;
+        border: 2rem solid #242124;
+    }
+    .aboutMe-p {
+        font-size: 0.8rem;
+    }
+    /* PORTFOLIO SECTION */
     .portfolio {
         justify-content: center;
         align-items: center;
         margin: 12rem auto 15rem auto;
+        width: 30rem;
+        margin: 3rem auto;
+        border: 2rem solid aliceblue;
     }
     .p4-content, .p3-content, .p2-content, .p1-content {
         display: grid;
@@ -326,6 +380,7 @@ h1 {
     }
     .contact {
         margin: auto;
+        width: 30rem;
     }
 }
 
@@ -340,6 +395,7 @@ h1 {
         margin: 3rem auto;
         width: 25rem;
         height: 20rem;
+        padding: 10rem 13rem;
     }
     .hello{
         margin: 3rem 0 0 0;
