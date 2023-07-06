@@ -232,7 +232,10 @@ h1 {
     min-width: 40rem;
 }
 .skills h4 {
+    display: flex;
     margin: 1rem;
+    align-items: center;
+    width: 7rem;
 }
 .skills-list {
     list-style-type: none;
@@ -242,13 +245,11 @@ h1 {
 .confident, .comfortable, .WIP {
     margin: 1rem;
     display: flex;
-    justify-content: space-between;
     padding: 0;
 }
 .confident li, .comfortable li, .WIP li {
     display: inline;
     margin: 1rem;
-    /* float: left; */
 }
 
 /* CONTACT SECTION */
