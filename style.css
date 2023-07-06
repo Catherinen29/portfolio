@@ -3,9 +3,6 @@ html {
   }
 
   body {
-    /* background-color: #9B9B9B; */
-    /* color: #61876E; */
-    /* color: #1B1B1B; */
     color: #434343;
     background-color: #242124;
     font-family: 'Raleway', sans-serif;
@@ -18,11 +15,11 @@ html {
 header {
     color:aliceblue;
     font-family: 'Raleway', sans-serif;
-    height: 20px;
+    height: 1.3rem;
     margin: 0 1rem;
-    padding: 5px 20px;
-    border: 1px solid aliceblue;
-    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    border: 0.1rem solid aliceblue;
+    border-radius: 0.3rem;
     text-align: right;
 }
 header img {
@@ -56,7 +53,7 @@ header img {
     }
 }
 h1 {
-    font-size: 100px;
+    font-size: 6rem;
     opacity: 0;
     filter: blur(1rem);
     animation: fade-in 1s 0.4s 
@@ -78,18 +75,15 @@ h1 {
 }
 
 .hello{
-    margin: 50px 0 0 0;
-    /* border: 1px solid black;  */
+    margin: 4rem 0 0 0;
     grid-row: 1 / span 2;
     grid-column: 1 / span 2;
-    padding: 5px 0 5px 0px;
+    padding: 1rem 0 1rem 0;
 }
 .catherine {
     margin: 0;
-    /* border: 1px solid black; */
     grid-row: 3 / span 3;
     grid-column: 3 / span 3;
-    padding: 0px 0 5px 0px;
 }
 
 .aboutMe-link {
@@ -99,7 +93,6 @@ h1 {
     text-align: right;
     text-decoration: none;
     color: aliceblue;
-    /* border: 1px solid black; */
 }
 .portfolio-link {
     grid-row: 2 / span 1;
@@ -108,8 +101,6 @@ h1 {
     text-align: right;
     text-decoration: none;
     color:aliceblue;
-    /* width: 12rem; */
-    /* border: 1px solid black; */
 }
 .contact-link {
     grid-row: 3 / span 1;
