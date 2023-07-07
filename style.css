@@ -17,15 +17,20 @@ header {
     color:aliceblue;
     font-family: 'Raleway', sans-serif;
     height: 1.3rem;
-    margin: 0 1rem;
-    padding: 0.3rem 0.5rem;
+    /* margin: 0 1rem; */
+    padding: 0.8rem 0.5rem;
     border: 0.1rem solid aliceblue;
     border-radius: 0.3rem;
-    text-align: right;
+    /* text-align: right; */
+    width: 95%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-header img {
+/* header img {
     height: 100%;
-}
+} */
 
 .container1 {
     display: flex;
@@ -40,7 +45,7 @@ header img {
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
     margin: 5rem auto;
-    width: 50rem;
+    width: 90vw;
     height: 30rem;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -296,11 +301,15 @@ h1 {
     h1 {
         font-size: 3rem;;
     }
+    .container1, .container2, .container3, .container4 {
+        width: 100%;
+    }
+
     .intro {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(3, 1fr);
         margin: 3rem auto;
-        width: 30rem;
+        width: 100%;
         height: 20rem;
         padding: 5rem 3rem;
         justify-content: center;
@@ -419,19 +428,29 @@ h1 {
         align-items: center;
         width: 100%;
         /* background-color: pink; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr 5fr 2fr 2fr;
       }
 
-    .container1, .container2, .container3, .container4 {
+    /* .container1, .container2, .container3, .container4 {
         width: 100%;
         justify-content: center;
         align-items: center;
+    } */
+    .header {
+        grid-row: 1; 
+        width: 90%;
+        box-sizing: border-box;
     }
+    .container1 {
+        grid-row: 2;   
 
+    }
     .intro {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
         margin: 3rem 1rem;
-        width: 8rem;
+        width: 80vw;
         height: 20rem;
         padding: 1rem 8rem;
         border: 0.5rem solid aliceblue;
@@ -473,6 +492,9 @@ h1 {
     }
 
 /* ABOUT ME SECTION */
+    .container2 {
+        grid-row: 3;
+    }
     .aboutMe {
         width: 20rem;
         margin: 3rem 2rem;
@@ -485,6 +507,10 @@ h1 {
     }
 
 /* PORTFOLIO SECTION */
+    .container3 {
+        grid-row: 4;
+    }
+
     .portfolio {
         width: 20rem;
         padding: 0;
@@ -525,6 +551,10 @@ h1 {
     }
 
 /* SKILL SECTION */
+    .container4 {
+        grid-row: 5;
+    }
+
     .skills-container {
         justify-content: center;
         align-items: center;
@@ -545,6 +575,7 @@ h1 {
 
 /* CONTACT SECTION */
 .contact {
+    grid-row: 6;
     margin: 3rem 2rem;
     width: 18rem;
     padding: 1rem 1.5rem;
