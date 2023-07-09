@@ -17,11 +17,11 @@ header {
     color:aliceblue;
     font-family: 'Raleway', sans-serif;
     height: 1.3rem;
-    /* margin: 0 1rem; */
+    margin: 0.5rem 1rem;
     padding: 0.8rem 0.5rem;
     border: 0.1rem solid aliceblue;
     border-radius: 0.3rem;
-    width: 95%;
+    width: 98%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -31,6 +31,7 @@ header {
 .container1 {
     display: flex;
     background-color: #242124;
+    width: 100%;
 }
 
 
@@ -40,8 +41,8 @@ header {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    margin: 5rem auto;
-    width: 90vw;
+    margin: 4rem 3rem;
+    width: 65%;
     height: 30rem;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -282,6 +283,98 @@ h1 {
 
 
 /* RESPONSIVE */
+@media screen and (max-width: 1200px){
+    body {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      header {
+        width: 98%;
+        box-sizing: border-box;
+      }
+      
+      h1 {
+          font-size: 3rem;;
+      }
+      .container1, .container2, .container3, .container4 {
+          width: 100%;
+      }
+      .intro {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem 3rem;
+        height: 20rem;
+        padding: 3rem 7rem;
+        border: 2rem solid aliceblue;
+      }
+      .hello{
+          margin: 2rem 0 0 0;
+          grid-row: 1 / span 1;
+          grid-column: 1 / span 1;
+          padding: 0;
+          font-size: 4rem;
+      }
+      .catherine {
+          margin: 0;
+          grid-row: 2 / span 3;
+          grid-column: 2 / span 2;
+          font-size: 4rem;
+      }
+      .aboutMe-link {
+        grid-row: 4 / span 1;
+        grid-column: 3 / span 1;
+        align-self: flex-end;
+    }
+        .portfolio-link {
+            grid-row: 2 / span 1;
+            grid-column: 3 / span 1;
+            align-self: flex-end;
+        }
+        .contact-link {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+            width: 8rem;
+            align-self: flex-start;
+        }
+
+        .aboutMe {
+            border: 2rem solid #242124;
+            min-height: 35rem;
+        }
+
+/* PORTFOLIO SECTION */
+    .portfolio {
+        border: 2rem solid aliceblue;
+        padding: 2rem;
+    }
+    .p4-content, .p3-content, .p2-content, .p1-content {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+    }
+    .p4-desc, .p2-desc {
+        width: 30rem;
+        grid-column: 1 / span 1;
+        margin: 1rem;
+    }
+    .bookclub-img, .recipe-img {
+        grid-row: 1 / span 1;
+        justify-content: center;
+    }
+    .eventMate-img, .tictactoe-img {
+        grid-column: 1 / span 1;
+    }
+    .p4-desc, .p3-desc, .p2-desc, .p1-desc {
+        grid-row: 2 / span 1;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     body {
@@ -291,7 +384,7 @@ h1 {
       width: 100%
     }
     header {
-    width: 100%;
+        width: 100%;
     }
     
     h1 {
@@ -374,7 +467,7 @@ h1 {
     .p4-content, .p3-content, .p2-content, .p1-content {
         display: grid;
         grid-template-columns: 1;
-        grid-template-rows: 1;
+        grid-template-rows: 2;
     }
     .p4-desc, .p2-desc, .p3-desc, .p1-desc {
         grid-column: 1;
@@ -406,7 +499,6 @@ h1 {
     .skills-container {
         justify-content: center;
         align-items: center;
-        /* width: 30rem; */
         padding: 5rem 0;
         margin: 3rem 2rem;
         border: 1rem solid #242124;
@@ -433,27 +525,28 @@ h1 {
         /* align-items: center; */
         /* width: 100%; */
         /* background-color: pink; */
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr 5fr 2fr 2fr;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr 5fr 2fr 2fr; */
         width: 100%;
         box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: flex-end;
       }
-    .header {
+    header {
         grid-row: 1; 
         width: 100%;
         box-sizing: border-box;
     }
-    .container1 {
+    .container1, .container2, .container3, .container4, .container5 {
         grid-row: 2;   
+        width: 100%;
     }
     .intro {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
         margin: 3rem 0.5rem;
-        width: 90%;
+        width: 100%;
         height: 20rem;
         padding: 1rem 2rem;
         border: 0.5rem solid aliceblue;
@@ -499,23 +592,22 @@ h1 {
         grid-row: 3;
     }
     .aboutMe {
-        width: 20rem;
         margin: 3rem 2rem;
         font-size: 0.7rem;
         border: 0.5rem solid #242124;
     }
 
     .aboutMe-p {
-        margin: 2rem 2rem;
+        margin: 1rem 2rem;
     }
 
 /* PORTFOLIO SECTION */
     .container3 {
         grid-row: 4;
+        box-sizing: border-box;
     }
 
     .portfolio {
-        width: 20rem;
         padding: 0;
         justify-content: center;
         align-items: center;
@@ -523,6 +615,9 @@ h1 {
         border: 0.5rem solid aliceblue;
         font-size: 0.7rem;
 
+    }
+    .portfolio h4 {
+        margin: 0 1.5rem;
     }
 
     .p4-desc, .p2-desc, .p3-desc, .p1-desc {
@@ -556,24 +651,41 @@ h1 {
 /* SKILL SECTION */
     .container4 {
         grid-row: 5;
+        width: 100vw;
+        max-width: 100%;
+        box-sizing: border-box;
+        /* justify-content: center; */
     }
 
     .skills-container {
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
         margin: 3rem 1rem;
         padding: 3rem 1.5rem;
-        width: 100%;
         border: 0.5rem solid #242124;
         font-size: 0.7rem;
     }
     .skills {
+        /* display: flex; */
+        max-width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* padding: 0;
+        margin: 0; */
+    }
+    .confident, .comfortable, .WIP {
         display: flex;
         flex-direction: column;
+        max-width: 100%
+        /* align-items: start; */
+        /* align-self: flex-start; */
     }
-    .confident li, .comfortable li, .WIP li {
-        display: inline;
+
+    .skills-list li {
         margin: 0.5rem;
+        display: inline;
+        max-width: 100%;
     }
 
 /* CONTACT SECTION */
