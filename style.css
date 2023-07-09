@@ -293,60 +293,60 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-      }
-      header {
+    }
+    header {
         width: 98%;
         box-sizing: border-box;
-      }
-      
-      h1 {
-          font-size: 3rem;;
-      }
-      .container1, .container2, .container3, .container4 {
-          width: 100%;
-      }
-      .intro {
+    }
+    
+    h1 {
+        font-size: 3rem;;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 100%;
+    }
+    .intro {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
         margin: 3rem 3rem;
         height: 20rem;
         padding: 3rem 7rem;
         border: 2rem solid aliceblue;
-      }
-      .hello{
-          margin: 2rem 0 0 0;
-          grid-row: 1 / span 1;
-          grid-column: 1 / span 1;
-          padding: 0;
-          font-size: 4rem;
-      }
-      .catherine {
-          margin: 0;
-          grid-row: 2 / span 3;
-          grid-column: 2 / span 2;
-          font-size: 4rem;
-      }
-      .aboutMe-link {
+    }
+    .hello{
+        margin: 2rem 0 0 0;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        padding: 0;
+        font-size: 4rem;
+    }
+    .catherine {
+        margin: 0;
+        grid-row: 2 / span 3;
+        grid-column: 2 / span 2;
+        font-size: 4rem;
+    }
+    .aboutMe-link {
         grid-row: 4 / span 1;
         grid-column: 3 / span 1;
         align-self: flex-end;
     }
-        .portfolio-link {
-            grid-row: 2 / span 1;
-            grid-column: 3 / span 1;
-            align-self: flex-end;
-        }
-        .contact-link {
-            grid-row: 2 / span 1;
-            grid-column: 1 / span 1;
-            width: 8rem;
-            align-self: flex-start;
-        }
-
-        .aboutMe {
-            border: 2rem solid #242124;
-            min-height: 35rem;
-        }
+    .portfolio-link {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+        align-self: flex-end;
+    }
+    .contact-link {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        width: 8rem;
+        align-self: flex-start;
+    }
+/* ABOUT ME SECTION */
+    .aboutMe {
+        border: 2rem solid #242124;
+        min-height: 35rem;
+    }
 
 /* PORTFOLIO SECTION */
     .portfolio {
@@ -373,8 +373,24 @@ h1 {
     .p4-desc, .p3-desc, .p2-desc, .p1-desc {
         grid-row: 2 / span 1;
     }
-}
 
+/* SKILLS SECTION */
+    .skills-container {
+        border: 2rem solid #242124;
+        padding: 2rem;
+    }
+
+/* CONTACT SECTION */
+    .container5 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact {
+        border: 2rem solid aliceblue;
+        padding: 0;
+        height: 20rem;
+    }
+}
 
 @media screen and (max-width: 900px) {
     body {
@@ -398,7 +414,7 @@ h1 {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(3, 1fr);
         margin: 3rem auto;
-        width: 100%;
+        width: 75%;
         height: 20rem;
         padding: 5rem 3rem;
         justify-content: center;
@@ -458,7 +474,7 @@ h1 {
     .portfolio {
         justify-content: center;
         align-items: center;
-        margin: 12rem 2rem 15rem 2rem;
+        margin: 3rem 2rem;
         border: 1rem solid aliceblue;
     }
     .p-container {
@@ -521,12 +537,6 @@ h1 {
 @media screen and (max-width: 600px) {
     body {
         padding: 0;
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* width: 100%; */
-        /* background-color: pink; */
-        /* grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr 5fr 2fr 2fr; */
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -689,15 +699,15 @@ h1 {
     }
 
 /* CONTACT SECTION */
-.contact {
-    grid-row: 6;
-    margin: 3rem 2rem;
-    width: 18rem;
-    padding: 1rem 1.5rem;
-    border: 0.5rem solid aliceblue;
-    font-size: 0.7rem;
-}
-.footer {
-    margin: 1rem;
-}
+    .contact {
+        grid-row: 6;
+        margin: 3rem 2rem;
+        width: 18rem;
+        padding: 1rem 1.5rem;
+        border: 0.5rem solid aliceblue;
+        font-size: 0.7rem;
+    }
+    .footer {
+        margin: 1rem;
+    }
 }
